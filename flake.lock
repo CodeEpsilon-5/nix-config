@@ -62,11 +62,11 @@
     },
     "nix-secrets": {
       "locked": {
-        "lastModified": 1780674914,
-        "narHash": "sha256-1eefd0UjEQYOUdXLyJcV6U9JrL5akW8hHBfU0S7UaCA=",
+        "lastModified": 1780678744,
+        "narHash": "sha256-hgoM9bb3HArkTO6EejR16zRUYLKwQojpwq+S3Fideuc=",
         "ref": "simple",
-        "rev": "d18497b962effb566ab16ca6474103091a335dbd",
-        "revCount": 16,
+        "rev": "ac8e00fb57115a94a14649693667ad4c1bda3c54",
+        "revCount": 17,
         "type": "git",
         "url": "ssh://git@github.com/CodeEpsilon-5/nix-secrets"
       },
