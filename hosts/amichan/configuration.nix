@@ -27,7 +27,7 @@
     fzf
     ripgrep
     fd
-    forsl-newt
+    fosrl-newt
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
