@@ -10,7 +10,9 @@
     wantedBy = [ "multi-user.target" ];
 
     serviceConfig = {
-      ExecStart = "${pkgs.fosrl-newt}/bin/newt --config-file ${config.sops.secrets."configs/newt.json".path}";
+      DynamicUser = true;
+      LoadCredential = "config.json:${config.sops.secrets."configs/newt.json".path}";
+      ExecStart = "${pkgs.fosrl-newt}/bin/newt --config-file \${CREDENTIALS_DIRECTORY}/config.json";
       Restart = "always";
       RestartSec = "5";
       DynamicUser = true;
