@@ -27,6 +27,7 @@
     fzf
     ripgrep
     fd
+    newt
   ];
 
   users = {
