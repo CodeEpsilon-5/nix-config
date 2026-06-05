@@ -6,7 +6,11 @@
         "/persist/etc/ssh/ssh_host_ed25519_key" 
     ];
 
-    sops.secrets."passwords/epsilon" = {
-        neededForUsers = true;
+    sops.secrets = {
+        "passwords/epsilon" = {
+            neededForUsers = true;
+        };
+        "configs/newt.json" = {};
+        "configs/newt.env" = {};
     };
 }

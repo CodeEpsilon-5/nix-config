@@ -4,5 +4,6 @@
         ./impermanence.nix
         ./sops.nix
         ./openssh.nix
+        ./newt.nix
     ];
 }
