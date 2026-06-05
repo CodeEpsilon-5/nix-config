@@ -30,6 +30,9 @@
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.extraOptions = ''
+    !include /run/secrets/github-token
+  '';
 
   users = {
     mutableUsers = false;
