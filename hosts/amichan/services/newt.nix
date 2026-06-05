@@ -15,7 +15,6 @@
       ExecStart = "${pkgs.fosrl-newt}/bin/newt --config-file \${CREDENTIALS_DIRECTORY}/config.json";
       Restart = "always";
       RestartSec = "5";
-      DynamicUser = true;
     };
   };
 }
