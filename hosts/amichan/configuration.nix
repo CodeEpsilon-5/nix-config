@@ -16,6 +16,19 @@
   networking.hostName = "amichan";
   networking.firewall.allowedTCPPorts = [ 22 ];
 
+  environment.systemPackages = with pkgs; [
+    neovim
+    git
+    curl
+    wget
+    btop
+    zfs
+    bat
+    fzf
+    ripgrep
+    fd
+  ];
+
   users = {
     mutableUsers = false;
     users.epsilon = {
