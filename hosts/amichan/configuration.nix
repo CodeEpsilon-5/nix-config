@@ -30,6 +30,8 @@
     newt
   ];
 
+  experimental-features = [ "nix-command" "flakes" ];
+
   users = {
     mutableUsers = false;
     users.epsilon = {
