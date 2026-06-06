@@ -5,5 +5,6 @@
         ./sops.nix
         ./openssh.nix
         ./newt.nix
+        ./docker.nix
     ];
 }

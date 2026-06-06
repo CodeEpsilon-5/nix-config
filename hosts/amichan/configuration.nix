@@ -38,11 +38,12 @@
     mutableUsers = false;
     users.epsilon = {
       isNormalUser = true;
-      extraGroups = [ "wheel" "docker" ];
+      extraGroups = [ "wheel" ];
       hashedPasswordFile = config.sops.secrets."passwords/epsilon".path;
       openssh.authorizedKeys.keys = [
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOynkENF3FcMTDFbqvwFupS7Y0E9tlAW7ECXsMGpQh/x lucas@CodeEpsilon-5"
       ];
+      linger = true;
     };
   };
 
