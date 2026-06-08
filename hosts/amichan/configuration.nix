@@ -65,7 +65,7 @@
     ls = "eza --color=auto";
     ll = "eza -alh --color=auto";
     la = "eza -A --color=auto";
-    l = "eza -CF --color=auto";
+    l = "eza -F --color=auto";
     rebuild = "sudo nixos-rebuild switch --flake github:CodeEpsilon-5/nix-config --refresh";
     c2nix = "compose2nix --sops_file ${config.sops.defaultSopsFile}";
   };
