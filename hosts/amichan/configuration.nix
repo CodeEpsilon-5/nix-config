@@ -66,7 +66,7 @@
     la = "eza -A --color=auto";
     l = "eza -CF --color=auto";
     rebuild = "sudo nixos-rebuild switch --flake github:CodeEpsilon-5/nix-config --refresh";
-  }
+  };
 
   system.stateVersion = "26.05";
 }
