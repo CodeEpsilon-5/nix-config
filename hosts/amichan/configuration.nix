@@ -37,6 +37,7 @@
     ripgrep
     fd
     eza
+    compose2nix
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -66,6 +67,7 @@
     la = "eza -A --color=auto";
     l = "eza -CF --color=auto";
     rebuild = "sudo nixos-rebuild switch --flake github:CodeEpsilon-5/nix-config --refresh";
+    c2nix = "compose2nix --sops_file ${config.sops.defaultSopsFile}";
   };
 
   system.stateVersion = "26.05";
