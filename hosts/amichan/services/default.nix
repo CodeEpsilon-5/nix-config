@@ -6,5 +6,6 @@
         ./openssh.nix
         ./newt.nix
         ./docker.nix
+        ./resolved.nix
     ];
 }

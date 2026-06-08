@@ -12,9 +12,18 @@
   boot.zfs.forceImportRoot = true;
 
   # O ZFS exige um HostID único de 8 caracteres hexadecimais
-  networking.hostId = "5ecf1629"; 
-  networking.hostName = "amichan";
-  networking.firewall.allowedTCPPorts = [ 22 ];
+  networking = {
+    hostId = "5ecf1629"; 
+    hostName = "amichan";
+    firewall = {
+      allowedTCPPorts = [ ];
+      allowedUDPPorts = [ ];
+    };
+    nameservers = [
+      "9.9.9.9"
+      "149.112.112.112"
+    ];
+  };
 
   environment.systemPackages = with pkgs; [
     neovim
@@ -27,6 +36,7 @@
     fzf
     ripgrep
     fd
+    eza
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -46,6 +56,16 @@
       linger = true;
     };
   };
+
+  environment.shellAliases = {
+    vim = "nvim";
+    vi = "nvim";
+    v = "nvim";
+    ls = "eza --color=auto";
+    ll = "eza -alh --color=auto";
+    la = "eza -A --color=auto";
+    l = "eza -CF --color=auto";
+  }
 
   system.stateVersion = "26.05";
 }

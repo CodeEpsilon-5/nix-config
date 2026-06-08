@@ -7,4 +7,6 @@
       PermitRootLogin = "prohibit-password";
     };
   };
+
+  networking.firewall.allowedTCPPorts = [ 22 ];
 }
