@@ -4,5 +4,6 @@
         ./configuration.nix
 
         ./services
+        ./programs
     ];
 }
