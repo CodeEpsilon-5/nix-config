@@ -63,7 +63,7 @@
         isSystemUser = true;
         linger = true;
         extraGroups = [ "git" ];
-        shell = pkgs.nologin; 
+        shell = "${pkgs.shadow}/bin/nologin"; 
       };
 
     };
