@@ -62,7 +62,7 @@
       git = {
         isSystemUser = true;
         linger = true;
-        groups = [ "git" ];
+        extraGroups = [ "git" ];
         shell = pkgs.nologin; 
       };
 
